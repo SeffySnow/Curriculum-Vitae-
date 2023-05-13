@@ -732,15 +732,14 @@ figure.snip1321 a {
 
 section.my-point{
  
-    border-bottom: none;
+    border-bottom:  solid rgba(250, 250, 250, 0.25);
    
 }
-
 
 #last-sec{
    
        width:90%;
-        height: 70%;
+        height: 60%;
     padding-bottom: 5px;
     display: block;
     padding-top: 35px;
@@ -753,7 +752,21 @@ section.my-point{
     padding-left: 10px ;
     margin-top: 50px;
 }
-
+/*contact me-----------------------------*/
+#form-container{
+    background-color:   rgba(250, 250, 250, 0.1);
+    padding: 5px 30x 50x 3px;
+    border: 1px solid rgba(44, 109, 166, 0.7);
+    ;
+}
+#form-container input{
+    background: transparent;
+    color:white;
+}
+#form-container textarea{
+    background: transparent;
+    color:white;
+}
 
 
 @media screen and (max-width: 1680px) {
