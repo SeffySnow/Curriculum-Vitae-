@@ -15,6 +15,7 @@
 
 
     <title>sepinood haghighi</title>
+    
 
 
 
@@ -92,7 +93,7 @@
                      Email : &nbsp;<a href="mailto:haghighisepinood@gmail.com">haghighisepinood@gmail.com</a>
                  </li>
                  <li>
-                     Phone Number : (+98)9102981178
+                     Phone Number : (+98)9105680507
                  </li>
              </ul>
              <div id="line1-a"></div>
@@ -348,7 +349,7 @@
             <h2>Contact Me</h2>
             <div class="line-dec"></div>
           </div>
-          <form id="form-container">
+          <form id="form-container" method="get" >
             <div class="container">
               <div class="row mt-3">
                 <div class="col-md mb-2">
@@ -357,6 +358,7 @@
                 </div>
                 <div class="col-md">
                   <input type="text" id="family" name="family" class="form-control" placeholder="Last name" data-validator="text">
+                  <span class="error" data-error="family"></span>
                 </div>
                 </div>
                 <div class="row mt-4">
@@ -367,15 +369,15 @@
                 </div>
                 <div class="row mt-4">
                   <div class=" col-lg-6 col-md">
-                    <input type="text" id="title" name="title" data-validator="email" placeholder="Title" class="form-control">
-                    <span class="error" data-error="Title"></span>
+                    <input type="text" id="title" name="title" data-validator="text" placeholder="Title" class="form-control">
+                    <span class="error" data-error="title"></span>
                   </div>
                 </div>
                 <div class="row mt-4 mx-1 mb-3">
                   <label for="Textarea">Write Your Message Here</label>
-                  <textarea class="form-control" id="Textarea" rows="3"></textarea>
+                  <textarea class="form-control" id="Textarea"  rows="3"></textarea>
                 </div>
-                <button class="btn btn-primary mb-3" type="submit">Submit</button>
+                <input class="btn btn-primary mb-3" type="submit" id="submit_btn" Value="Submit"></input>
               </div>
           
           </form>
@@ -445,7 +447,11 @@
       $(window).scroll(function() {
         checkSection();
       });
-
+    
+      Validator.formValidator("form-container");
+    
+     
+      
 
     </script>
   </body>

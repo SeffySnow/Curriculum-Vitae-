@@ -767,6 +767,10 @@ section.my-point{
     background: transparent;
     color:white;
 }
+#form-container span.error{
+    font-size: 13px;
+    color: rgb(199, 102, 102);
+}
 
 
 @media screen and (max-width: 1680px) {
