@@ -30,9 +30,8 @@ const Validator = {
                         document.querySelector('[data-error="' +items[i].id+ '"]').innerHTML = Validator[temp+'Message'];
                         items[i].style.borderColor = "red";
 
-                    }else{
-                        alert("message has been submitted! \n thanks for contacting me:)")
                     }
+                    
                 }
             }
             if( flag != 0 ){
